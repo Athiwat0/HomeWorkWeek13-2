@@ -2,9 +2,9 @@
 {
     static void Main(string[] args)
     {
+        Console.Clear();
         Queue<char> Push = new Queue<char>();
         Queue<int> Pull = new Queue<int>();
-
         while(true)
         {
             Console.Write("Input Size (L,M,S) : ");
@@ -18,7 +18,6 @@
                 Push.Push(Input_size);
             }
         }
-
         while(true)
         {
             char GetSize = Push.Pop();
@@ -44,7 +43,6 @@
                 break;
             }
         }
-
         Console.WriteLine("========================================");
         for (int i = 0 ; i < Pull.GetLength() ; i++)
         {
